@@ -39,7 +39,7 @@ export class DueDateService {
 
     // Create some local variables for idempotency
     let tmpDate = submission;
-    let tmpDuration = duration / 60 / 60 / 1000;
+    let tmpDuration = duration;
 
     // We will use the remaining duration for recursion
     while (tmpDuration > 0) {
